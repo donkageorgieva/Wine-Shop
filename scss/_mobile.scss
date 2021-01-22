@@ -1,0 +1,254 @@
+$phone-min: 320px;
+$phone-max: 480px;
+$tablet-min: 768px;
+$tablet-max: 1024px;
+$browser-resize-max: 766px;
+$browser-resize-min: 483px;
+
+@media (max-width: $phone-max) and (min-width: $phone-min) {
+  body {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-family: $text-font;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .hamburger {
+    height: 40px;
+    width: 30px;
+    z-index: 2;
+    position: fixed;
+  }
+  .nav {
+    .logo img {
+      height: 20px;
+      max-width: 100%;
+    }
+    .fa-shopping-cart {
+      right: 200px;
+    }
+  }
+  .cart {
+    max-width: 100%;
+  }
+  .hero {
+    max-width: 100%;
+    height: 100%;
+    img {
+      display: none;
+    }
+    .rotate {
+      display: none;
+    }
+    .socialLinks {
+      margin: 50px 0px 0px;
+    }
+    .main {
+      margin: 0 auto;
+      h2 {
+        padding: 5px;
+      }
+      p {
+        width: 200px;
+
+        margin: 0 auto;
+      }
+      button {
+        margin: 30px 5px;
+        padding: 10px 20px;
+        max-width: 100%;
+        width: 100px;
+      }
+    }
+
+    .heroContainer {
+      justify-content: center;
+      text-align: center;
+      flex-flow: column;
+    }
+  }
+  .shopping {
+    .filter {
+      .filterOptions {
+        max-width: 100%;
+        right: 50px;
+        width: 100px;
+      }
+    }
+    .sort {
+      .sortOptions {
+        max-width: 100%;
+        width: 100px;
+        right: 240px;
+      }
+    }
+    .items {
+      display: grid;
+      grid-template-columns: auto;
+      .fas {
+        margin-top: 40px;
+      }
+    }
+    .fa-arrow-right {
+      transform: rotate(90deg);
+      margin-top: 0;
+    }
+    .fa-arrow-left {
+      transform: rotate(90deg);
+      margin-top: 0px;
+    }
+  }
+  .about {
+    text-align: center;
+    max-width: 100%;
+
+    h1 {
+      text-align: center;
+      padding: 50px 0px;
+    }
+    img {
+      display: none;
+    }
+    .flex {
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      flex-flow: column;
+      max-width: 100%;
+      justify-content: center;
+
+      p {
+        max-width: 100%;
+        width: 250px;
+        text-align: center;
+        line-height: 1.6;
+        margin: 0 auto;
+      }
+    }
+  }
+  footer {
+    max-width: 100%;
+    font-size: 16px;
+    .column {
+      margin: 10px;
+    }
+    .row {
+      display: block;
+    }
+  }
+}
+@media (max-width: $tablet-max) and (min-width: $tablet-min) {
+  body {
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-family: $text-font;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .hero {
+    height: 500px;
+    .main {
+      margin: 20px auto;
+    }
+    img {
+      height: 300px;
+      margin: 50px 30px 0px;
+      max-width: 100%;
+    }
+    .heroContainer {
+      justify-content: center;
+      width: 700px;
+      margin: 0 auto;
+
+      .main {
+        text-align: center;
+
+        p {
+          width: 200px;
+          margin: 0 auto;
+        }
+        button {
+          padding: 10px 20px;
+          max-width: 100%;
+          width: 100px;
+        }
+      }
+    }
+    .socialLinks {
+      margin: 0px 0px;
+    }
+  }
+  .about {
+    height: 900px;
+    h1 {
+      padding: 100px 0px 60px 0px;
+    }
+    .flex {
+      width: 700px;
+      max-width: 100%;
+      margin: 0 auto;
+      .square {
+        height: 400px;
+        width: 400px;
+      }
+      p {
+        width: 200px;
+        padding: 70px 0px;
+      }
+    }
+    img {
+      height: 500px;
+    }
+  }
+  footer {
+    .row {
+      p {
+        margin: 6px 5px;
+      }
+    }
+  }
+}
+@media (max-width: $browser-resize-max) and (min-width: $browser-resize-min) {
+  .hero {
+    .main {
+      margin: 20px auto;
+    }
+    img {
+      height: 300px;
+      margin: 50px 30px 0px;
+      max-width: 100%;
+    }
+    .heroContainer {
+      justify-content: center;
+      width: 700px;
+      margin: 0 auto;
+
+      .main {
+        text-align: center;
+
+        p {
+          width: 200px;
+          margin: 0 auto;
+        }
+        button {
+          padding: 10px 20px;
+          max-width: 100%;
+          width: 100px;
+        }
+      }
+    }
+    .socialLinks {
+      margin: 0px 0px;
+    }
+  }
+}

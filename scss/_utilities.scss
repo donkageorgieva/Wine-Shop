@@ -1,0 +1,30 @@
+$light-color: #fbf5eb;
+$text-color: #221c31;
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $text-color;
+  } @else {
+    @return $light-color;
+  }
+}
+
+$spaceamount: (1, 2, 3, 4, 5);
+@each $space in $spaceamount {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .p-#{$space} {
+    margin: #{$space}rem;
+  }
+  .py-#{$space} {
+    margin: #{$space}rem 0;
+  }
+}

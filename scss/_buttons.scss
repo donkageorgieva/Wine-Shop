@@ -1,0 +1,65 @@
+$blue-button-color: #2c4677;
+$red-button-color: #a82549;
+
+button {
+  display: inline;
+  font-size: 14px;
+  box-shadow: 2px 5px 15px #d3d2de;
+
+  border: none;
+
+  &:active {
+    outline: none;
+    border: none;
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
+  &:hover {
+    cursor: pointer;
+    outline: none;
+  }
+}
+.btn-checkOut {
+  padding: 10px 20px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  background-color: $red-button-color;
+  color: set-text-color($red-button-color);
+  &:hover {
+    background-color: lighten($color: $red-button-color, $amount: 10%);
+    transition: 0.3s ease-in-out;
+  }
+}
+.btn-order {
+  background-color: $red-button-color;
+  color: set-text-color($red-button-color);
+  margin: 5px 20px 0px 0px;
+  padding: 20px 50px;
+  &:hover {
+    background-color: lighten($color: $red-button-color, $amount: 10%);
+    transition: 0.3s ease-in-out;
+  }
+}
+.btn-info {
+  background-color: $blue-button-color;
+  color: set-text-color($blue-button-color);
+  margin: 5px 0px 20px 0px;
+  padding: 20px 50px;
+  &:hover {
+    background-color: lighten($color: $blue-button-color, $amount: 10%);
+    transition: 0.3s ease-in-out;
+  }
+}
+.btn-add {
+  padding: 10px 20px;
+  background-color: $red-button-color;
+  color: set-text-color($red-button-color);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: lighten($color: $red-button-color, $amount: 10%);
+    transition: 0.3s ease-in-out;
+  }
+}
