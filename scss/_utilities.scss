@@ -1,9 +1,10 @@
 $light-color: #fbf5eb;
 $text-color: #221c31;
 .container {
-  max-width: 80%;
+  max-width: 100%;
+  width: 80%;
   margin: 0 auto;
-  text-align: center;
+  
 }
 @function set-text-color($color) {
   @if (lightness($color) > 70) {
